@@ -24,7 +24,7 @@ const TableContent = ({rating, available}: TableContentProps) => {
                 <FiX className="h-4 w-4 text-white" />
                 </span>
               }
-              <Image src="/car.png" fill alt="imagem"/>
+              <Image src="/car.png" fill alt="Imagem de um carro preto"/>
             </div>
             <div className="flex flex-col">
               <h2 className="font-semibold text-base text-gray-900">Mini Cooper 2020</h2>
@@ -40,7 +40,7 @@ const TableContent = ({rating, available}: TableContentProps) => {
         <td className="flex items-center justify-center">
           <div className="flex items-center gap-2">
             <div className="relative h-[3rem] w-[3rem] ">
-              <Image src="/car.png" fill alt="imagem"/>
+              <Image src="/car.png" fill alt="Imagem de um carro preto"/>
             </div>
             <h2 className="text-sm text-gray-900">Mini Cooper</h2>
           </div>
