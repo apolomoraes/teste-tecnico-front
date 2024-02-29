@@ -1,8 +1,8 @@
-"use client"
-
 import Image from "next/image";
 import Rating from "./rating";
 import { SlOptionsVertical } from "react-icons/sl";
+import { FaCheck } from "react-icons/fa6";
+import { FiX } from "react-icons/fi";
 
 interface TableContentProps {
   rating: number;
@@ -16,6 +16,14 @@ const TableContent = ({rating, available}: TableContentProps) => {
         <td className="flex gap-5 border-b border-gray-100 pb-2">
           <div className="flex items-end gap-3">
             <div className="relative h-[5rem] w-[6rem]">
+              {
+                available ? <span className="flex items-center justify-center absolute z-50 w-[1.5rem] h-[1.5rem] bg-green-700 rounded-full top-1 left-1">
+                <FaCheck className="h-4 w-4 text-white" />
+                </span> :
+                <span className="flex items-center justify-center absolute z-50 w-[1.5rem] h-[1.5rem] bg-red-700 rounded-full top-1 left-1">
+                <FiX className="h-4 w-4 text-white" />
+                </span>
+              }
               <Image src="/car.png" fill alt="imagem"/>
             </div>
             <div className="flex flex-col">
