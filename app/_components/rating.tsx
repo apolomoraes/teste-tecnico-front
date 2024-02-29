@@ -1,6 +1,6 @@
 import { AiOutlineStar, AiFillStar } from "react-icons/ai";
 
-interface RatingProps {
+export interface RatingProps {
   rating: number
 }
 const Rating = ({ rating }: RatingProps) => {
